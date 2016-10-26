@@ -43,6 +43,9 @@ class BrowserDetector implements DetectorInterface
         'SeaMonkey',
         'Firefox',
         'Yandex',
+		"UC",
+		"BAIDU",
+		"QQ",
         'Chrome',
         'OmniWeb',
         // common mobile
@@ -958,4 +961,49 @@ class BrowserDetector implements DetectorInterface
 
         return false;
     }
+
+    /* check uc browser*/
+	public static function checkBrowserUC(){
+		if (stripos(self::$userAgentString, 'Chrome') !== false) {
+			$aresult = explode('/', stristr(self::$userAgentString, 'UBrowser') );
+			if (isset($aresult[1])) {
+				$aversion = explode(' ', $aresult[1]);
+				self::$browser->setVersion($aversion[0]);
+			}
+			self::$browser->setName(Browser::UC);
+			return true;
+		}
+
+		return false;
+	}
+
+	/* check baidu browser*/
+	public static function checkBrowserBAIDU(){
+		if (stripos(self::$userAgentString, 'Chrome') !== false) {
+			$aresult = explode('/', stristr(self::$userAgentString, 'BIDUBrowser') );
+			if (isset($aresult[1])) {
+				$aversion = explode(' ', $aresult[1]);
+				self::$browser->setVersion($aversion[0]);
+			}
+			self::$browser->setName(Browser::BAIDU);
+			return true;
+		}
+
+		return false;
+	}
+
+	/* check qq browser*/
+	public static function checkBrowserQQ(){
+		if (stripos(self::$userAgentString, 'Chrome') !== false) {
+			$aresult = explode('/', stristr(self::$userAgentString, 'QQBrowser') );
+			if (isset($aresult[1])) {
+				$aversion = explode(' ', $aresult[1]);
+				self::$browser->setVersion($aversion[0]);
+			}
+			self::$browser->setName(Browser::QQ);
+			return true;
+		}
+
+		return false;
+	}
 }

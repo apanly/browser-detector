@@ -48,6 +48,12 @@ class Browser
 	const BAIDUBOT = 'BaiduBot';
 	const SOGOUBOT = 'SogouBot';
 
+	/*国产浏览器，基本都是基于webkit的,所有很容易误判为chrome*/
+	const UC = 'UC';
+	const BAIDU = 'Baidu';
+	const QQ = 'QQ';
+	const B360 = '360';
+
     const VERSION_UNKNOWN = 'unknown';
 
     /**

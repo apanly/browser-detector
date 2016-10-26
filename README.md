@@ -109,5 +109,6 @@ PHP Browser is licensed under [The MIT License (MIT)](LICENSE).
 
 ###参考资料
 * [sinergi/php-browser-detector](https://github.com/sinergi/php-browser-detector)
+* [用户代理检测和浏览器Ua详细分析](http://www.cnblogs.com/hykun/p/Ua.html)
 
 
