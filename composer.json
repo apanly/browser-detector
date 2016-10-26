@@ -32,12 +32,5 @@
         "psr-4": {
             "apanly\\BrowserDetector\\Tests\\": ["tests/BrowserDetector/Tests", "tests/BrowserDetector/Tests/_includes"]
         }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-develop": "6.1-dev"
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
