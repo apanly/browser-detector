@@ -1,7 +1,7 @@
 {
     "name": "apanly/browser-detector",
-    "description": "Detecting the user's browser, operating system and language.",
-    "keywords": ["browser", "os", "operating system", "language", "detection"],
+    "description": "根据UA判断浏览器类型和版本，操作系统，设备型号 ",
+    "keywords": ["browser", "os", "operating system", "language", "detection","浏览器","操作系统","设备型号"],
     "license": "MIT",
     "authors": [
         {
@@ -12,6 +12,10 @@
             "name": "Chris Schuld",
             "email": "chris@chrisschuld.com",
             "homepage": "http://chrisschuld.com"
+        },
+        {
+            "name": "apanly",
+            "email": "apanly@163.com"
         }
     ],
     "require": {
@@ -22,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Sinergi\\BrowserDetector\\": "src"
+            "apanly\\BrowserDetector\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Sinergi\\BrowserDetector\\Tests\\": ["tests/BrowserDetector/Tests", "tests/BrowserDetector/Tests/_includes"]
+            "apanly\\BrowserDetector\\Tests\\": ["tests/BrowserDetector/Tests", "tests/BrowserDetector/Tests/_includes"]
         }
     },
     "extra": {
