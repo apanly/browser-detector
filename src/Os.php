@@ -51,7 +51,7 @@ class Os
     /**
      * @param null|string|UserAgent $userAgent
      *
-     * @throws \Sinergi\BrowserDetector\InvalidArgumentException
+     * @throws \apanly\BrowserDetector\InvalidArgumentException
      */
     public function __construct($userAgent = null)
     {

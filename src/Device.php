@@ -9,6 +9,19 @@ class Device
     const IPAD = 'iPad';
     const IPHONE = 'iPhone';
     const WINDOWS_PHONE = 'Windows Phone';
+    const Android = 'Android';
+    const OPPO = 'OPPO';
+    const REDMI = 'Redmi';
+    const XiaoMi = 'XiaoMi';
+    const Le = 'Letv';
+    const Vivo = 'Vivo';
+    const SAMSUNG = 'Samsung';
+    const HuaWei = 'HuaWei';
+    const Lenovo = 'Lenovo';
+    const HTC = 'HTC';
+    const Meizu = 'Meizu';
+    const ZTE = 'ZTE';
+    const ONEPLUS = 'ONEPLUS';
 
     /**
      * @var string
@@ -23,7 +36,7 @@ class Device
     /**
      * @param null|string|UserAgent $userAgent
      *
-     * @throws \Sinergi\BrowserDetector\InvalidArgumentException
+     * @throws \apanly\BrowserDetector\InvalidArgumentException
      */
     public function __construct($userAgent = null)
     {

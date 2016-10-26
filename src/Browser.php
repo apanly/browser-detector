@@ -53,6 +53,7 @@ class Browser
 	const BAIDU = 'Baidu';
 	const QQ = 'QQ';
 	const B360 = '360';
+	const LIEBAO = 'LieBao';
 
     const VERSION_UNKNOWN = 'unknown';
 
@@ -93,7 +94,7 @@ class Browser
     /**
      * @param null|string|UserAgent $userAgent
      *
-     * @throws \Sinergi\BrowserDetector\InvalidArgumentException
+     * @throws \apanly\BrowserDetector\InvalidArgumentException
      */
     public function __construct($userAgent = null)
     {

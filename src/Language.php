@@ -20,7 +20,7 @@ class Language
     /**
      * @param null|string|AcceptLanguage $acceptLanguage
      *
-     * @throws \Sinergi\BrowserDetector\InvalidArgumentException
+     * @throws \apanly\BrowserDetector\InvalidArgumentException
      */
     public function __construct($acceptLanguage = null)
     {

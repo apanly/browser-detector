@@ -43,9 +43,10 @@ class BrowserDetector implements DetectorInterface
         'SeaMonkey',
         'Firefox',
         'Yandex',
-		"UC",
 		"BAIDU",
+		"UC",
 		"QQ",
+		"LIEBAO",
         'Chrome',
         'OmniWeb',
         // common mobile
@@ -964,7 +965,7 @@ class BrowserDetector implements DetectorInterface
 
     /* check uc browser*/
 	public static function checkBrowserUC(){
-		if (stripos(self::$userAgentString, 'Chrome') !== false) {
+		if ( stripos(self::$userAgentString, 'UBrowser') !== false) {
 			$aresult = explode('/', stristr(self::$userAgentString, 'UBrowser') );
 			if (isset($aresult[1])) {
 				$aversion = explode(' ', $aresult[1]);
@@ -974,12 +975,23 @@ class BrowserDetector implements DetectorInterface
 			return true;
 		}
 
+		if ( stripos(self::$userAgentString, 'UCBrowser') !== false) {
+			$aresult = explode('/', stristr(self::$userAgentString, 'UCBrowser') );
+			if (isset($aresult[1])) {
+				$aversion = explode(' ', $aresult[1]);
+				self::$browser->setVersion($aversion[0]);
+			}
+			self::$browser->setName(Browser::UC);
+			return true;
+		}
+
+
 		return false;
 	}
 
 	/* check baidu browser*/
 	public static function checkBrowserBAIDU(){
-		if (stripos(self::$userAgentString, 'Chrome') !== false) {
+		if (stripos(self::$userAgentString, 'BIDUBrowser') !== false) {
 			$aresult = explode('/', stristr(self::$userAgentString, 'BIDUBrowser') );
 			if (isset($aresult[1])) {
 				$aversion = explode(' ', $aresult[1]);
@@ -994,13 +1006,23 @@ class BrowserDetector implements DetectorInterface
 
 	/* check qq browser*/
 	public static function checkBrowserQQ(){
-		if (stripos(self::$userAgentString, 'Chrome') !== false) {
+		if (stripos(self::$userAgentString, 'QQBrowser') !== false) {
 			$aresult = explode('/', stristr(self::$userAgentString, 'QQBrowser') );
 			if (isset($aresult[1])) {
 				$aversion = explode(' ', $aresult[1]);
 				self::$browser->setVersion($aversion[0]);
 			}
 			self::$browser->setName(Browser::QQ);
+			return true;
+		}
+
+		return false;
+	}
+
+	/* check 猎豹 browser*/
+	public static function checkBrowserLIEBAO(){
+		if (stripos(self::$userAgentString, 'LBBROWSER') !== false) {
+			self::$browser->setName(Browser::LIEBAO);
 			return true;
 		}
 
