@@ -7,6 +7,11 @@ browser-detector
 
 ###检测支持
 ####可检测浏览器
+ * QQ浏览器
+ * UC浏览器
+ * 百度浏览器
+ * 360浏览器
+ * 猎豹浏览器
  * Vivaldi
  * Opera
  * Opera Mini
@@ -67,9 +72,18 @@ browser-detector
  * iPad
  * iPhone
  * Windows Phone
- * Lumia
- * Huawei
- * Xiaomi
+ * OPPO手机（OPPO）
+ * 红米手机（Redmi）
+ * 小米手机（XiaoMi）
+ * 乐视手机（Letv）
+ * Vivo手机（Vivo）
+ * 三星手机（Samsung）
+ * 华为手机（HuaWei）
+ * 联想手机（Lenovo）
+ * HTC
+ * 魅族手机（Meizu）
+ * 中兴手机（ZTE）
+ * 一加手机（ONEPLUS）
 
 ### 安装
     
