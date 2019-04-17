@@ -1,12 +1,12 @@
 browser-detector
 ===================
-###主要作用
+### 主要作用
 * 根据UA判断浏览器类型和版本，
 * 根据UA判断操作系统和版本号
 * 根据UA判断设备
 
-###检测支持
-####可检测浏览器
+### 检测支持
+#### 可检测浏览器
  * QQ浏览器
  * UC浏览器
  * 百度浏览器
@@ -49,7 +49,7 @@ browser-detector
  * Yandex Browser
  * Comodo Dragon
  
-####可检测操作系统
+#### 可检测操作系统
   * Windows
   * Windows Phone
   * OS X
@@ -68,7 +68,7 @@ browser-detector
   * OS2
   * BeOS
   
-####可检测设备
+#### 可检测设备
  * iPad
  * iPhone
  * Windows Phone
@@ -114,14 +114,14 @@ browser-detector
         echo 'You are using an iPad.';
     }
 
-###说明
+### 说明
 本项目大部分源码clone 参考资料的sinergi/php-browser-detector，主要是原项目无法适应中国国情，需要修改，故此另开一个项目
 
 ###Lecense
 PHP Browser is licensed under [The MIT License (MIT)](LICENSE).
 
 
-###参考资料
+### 参考资料
 * [sinergi/php-browser-detector](https://github.com/sinergi/php-browser-detector)
 * [用户代理检测和浏览器Ua详细分析](http://www.cnblogs.com/hykun/p/Ua.html)
 
