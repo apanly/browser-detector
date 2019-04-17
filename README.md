@@ -117,7 +117,7 @@ browser-detector
 ### 说明
 本项目大部分源码clone 参考资料的sinergi/php-browser-detector，主要是原项目无法适应中国国情，需要修改，故此另开一个项目
 
-###Lecense
+### Lecense
 PHP Browser is licensed under [The MIT License (MIT)](LICENSE).
 
 
